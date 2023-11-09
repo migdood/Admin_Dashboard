@@ -1,0 +1,52 @@
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+main {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1.3fr 1fr 1fr 1fr 1fr;
+}
+.sidebar {
+  background-color: #1992d4;
+  grid-row: 1/6;
+  grid-column: 1/2;
+  color: white;
+  overflow: hidden;
+}
+.namecontainer {
+  display: flex;
+  justify-content: center;
+}
+.namecontainer > h1 {
+  text-align: center;
+}
+.namecontainer > img {
+  margin-top: 15px;
+  height: 45px;
+  width: auto;
+  filter: invert();
+}
+.sidebar > .sidebarbuttons > div {
+  display: flex;
+  padding-left: 40px;
+  transition: 0.2s ease-out;
+}
+.sidebar > .sidebarbuttons > div:hover {
+  cursor: pointer;
+  background-color: #4aade3;
+  transform: scale(1.1);
+}
+.sidebar > .sidebarbuttons > div > h3 {
+  font-size: 20px;
+}
+.sidebar > .sidebarbuttons > div > img {
+  filter: invert();
+  height: 29px;
+  width: auto;
+  align-self: center;
+  margin-right: 15px;
+}
